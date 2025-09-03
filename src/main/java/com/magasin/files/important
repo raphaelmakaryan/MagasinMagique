@@ -1,0 +1,7 @@
+- système diminue ces deux valeurs pour chaque produit.
+- Une fois que sellIn est passée, la quality se dégrade deux fois plus rapidement.
+- La quality d'un produit ne peut jamais être négative et n'est jamais plus grande que 50.
+- Le "Comté" augmente sa quality plus le temps passe.
+- "Kryptonite", étant un objet légendaire, n'a pas de sellIn et ne perd jamais en quality
+- Le "Pass VIP Concert" augmente sa quality plus le temps passe (sellIn), quality augmente de 2 (quand il reste 10 jours ou moins) et de 3 (quand il reste 5 jours ou
+moins), mais la quality tombe à 0 une fois le concert passé.

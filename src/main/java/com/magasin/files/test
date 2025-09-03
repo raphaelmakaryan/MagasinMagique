@@ -1,0 +1,50 @@
+Compté (10 / 2)
+-> quality + 1
+-> sellIn - 1
+-> quality + 1
+
+= Compté (9 / 4)
+
+Pass vip (8/1)
+-> quality + 1
+-> quality + 1
+-> sellIn - 1
+-> quality + 1
+= Pass vip  (7 / 4)
+
+Kryptonite (0 / 0)
+-> quality + 1
+-> quality + 1
+-> quality + 1
+
+= Kryptonite (0 / 3)
+
+
+
+New :
+Pour l'item Pouvoirs magiques avec un sellIn de 0 et une quality de 25, le nouveau sellIn est de -1 et la nouvelle quality est de 0
+
+Pour l'item Comté avec un sellIn de 10 et une quality de 0, le nouveau sellIn est de 9 et la nouvelle quality est de 2
+
+Pour l'item Pass VIP Concert avec un sellIn de 1 et une quality de 1, le nouveau sellIn est de 0 et la nouvelle quality est de 4
+
+Pour l'item Kryptonite avec un sellIn de 10 et une quality de 80, le nouveau sellIn est de 10 et la nouvelle quality est de 80
+
+old :
+Pour l'item Pouvoirs magiques avec un sellIn de 0 et une quality de 25, le nouveau sellIn est de -1 et la nouvelle quality est de 23
+
+Pour l'item Comté avec un sellIn de 10 et une quality de 0, le nouveau sellIn est de 9 et la nouvelle quality est de 1
+
+Pour l'item Pass VIP Concert avec un sellIn de 1 et une quality de 1, le nouveau sellIn est de 0 et la nouvelle quality est de 4
+
+Pour l'item Kryptonite avec un sellIn de 10 et une quality de 80, le nouveau sellIn est de 10 et la nouvelle quality est de 80
+
+Probleme :
+
+Pouvoirs magiques , quality est de 0 (52)
+
+Comté, quality est de 2 (1
+
+
+old : 23
+new : 21

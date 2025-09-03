@@ -1,0 +1,103 @@
+Si il s'appele pas comté et pas pass vip
+if (!items[i].name.equals("Comté") && !items[i].name.equals("Pass VIP Concert")) {
+
+    Si sa quantité est superieur a 0
+    if (items[i].quality > 0) {
+
+        Si il s'appele pas Kryptonite
+        if (!items[i].name.equals("Kryptonite")) {
+
+            Sa quantité diminue de 1
+            items[i].quality = items[i].quality - 1;
+        }
+    }
+} else {
+
+    Si sa quantité est inferieur a 50
+    if (items[i].quality < 50) {
+
+        Ajout +1 a sa quantité
+        items[i].quality = items[i].quality + 1;
+
+        Si il s'appele pass vip
+        if (items[i].name.equals("Pass VIP Concert")) {
+
+            Si il reste moins de 11 jours
+            if (items[i].sellIn < 11) {
+
+                Si sa quantité est inferieur a 50
+                if (items[i].quality < 50) {
+
+                    Ajout +1 a sa quantité
+                    items[i].quality = items[i].quality + 1;
+                }
+            }
+
+            Si il reste moins de 6 jours
+            if (items[i].sellIn < 6) {
+
+                Si sa quantité est inferieur a 50
+                if (items[i].quality < 50) {
+
+                    Ajout +1 a sa quantité
+                    items[i].quality = items[i].quality + 1;
+                }
+            }
+        }
+    }
+}
+
+// Si il s'appelle pas Kryptonite on retire un jour
+if (!items[i].name.equals("Kryptonite")) {
+    items[i].sellIn = items[i].sellIn - 1;
+}
+
+Si la date de péremption est dépassée
+if (items[i].sellIn < 0) {
+
+    Si il s'apple pas comté n'y y pass vip
+    if (!items[i].name.equals("Comté")) {
+        if (!items[i].name.equals("Pass VIP Concert")) {
+
+            Si sa quantité est superieur a 0
+            if (items[i].quality > 0) {
+
+                Si il s'appele pas Kryptonite
+                if (!items[i].name.equals("Kryptonite")) {
+
+                    Quantité - 1
+                    items[i].quality = items[i].quality - 1;
+                }
+            }
+        } else {
+
+            Sinon -1 de qualité
+            items[i].quality = items[i].quality - items[i].quality;
+        }
+    } else {
+
+        Si sa quantité est inferieur a 50 on ajoute +1 de quantité
+        if (items[i].quality < 50) {
+            items[i].quality = items[i].quality + 1;
+        }
+    }
+}
+
+
+
+Comté : ligne 2 / 59
+Pass VIP Concert : ligne 2 / 23 / 60
+Kryptonite : 8 / 51 / 66
+
+
+ if (items[i].sellIn < 0 && !items[i].name.equals("Comté")) {
+    if (!items[i].name.equals("Pass VIP Concert")) {
+        items[i].quality = 0;
+    } else if (!items[i].name.equals("Kryptonite") && items[i].quality > 0)
+    {
+    items[i].quality = items[i].quality - 1;
+    }
+    } else if (items[i].quality < 50) {
+        items[i].quality = items[i].quality + 1;
+    }
+}
