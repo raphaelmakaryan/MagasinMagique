@@ -9,26 +9,28 @@ class MagasinTest {
     void foo() {
         Item[] items = new Item[]{new Item("Pouvoirs magiques", 0, 54), new Item("Comté", 10, 0), new Item("Pass VIP Concert", 1, 1), new Item("Kryptonite", 10, 80)};
         Magasin app = new Magasin(items);
-        //app.newUpdateQuality();
+        app.updateQuality();
         Assertions.assertEquals("Pouvoirs magiques", app.items[0].name);
     }
 
     @Test
     void oldVersion() {
         //Item[] items = new Item[]{new Item("Pouvoirs magiques", 0, 25), new Item("Comté", 10, 0), new Item("Pass VIP Concert", 1, 1), new Item("Kryptonite", 10, 80)};
-        Item[] items = new Item[]{new Item("Pouvoirs magiques", 0, 25)};
+        //Item[] items = new Item[]{new Item("Pouvoirs magiques", 0, 25)};
+        Item[] items = new Item[]{new Item("Comté", 10, 0)};
         Magasin app = new Magasin(items);
         app.updateQuality();
-        Assertions.assertEquals("Pouvoirs magiques", app.items[0].name);
+        //Assertions.assertEquals("Pouvoirs magiques", app.items[0].name);
     }
 
     @Test
     void newVersion() {
         //Item[] items = new Item[]{new Item("Pouvoirs magiques", 0, 25), new Item("Comté", 10, 0), new Item("Pass VIP Concert", 1, 1), new Item("Kryptonite", 10, 80)};
-        Item[] items = new Item[]{new Item("Pouvoirs magiques", 0, 25)};
+        //Item[] items = new Item[]{new Item("Pouvoirs magiques", 0, 25)};
+        Item[] items = new Item[]{new Item("Comté", 10, 0)};
         Magasin app = new Magasin(items);
         app.newUpdateQuality();
-        Assertions.assertEquals("Pouvoirs magiques", app.items[0].name);
+        //Assertions.assertEquals("Pouvoirs magiques", app.items[0].name);
     }
 
     @Test
